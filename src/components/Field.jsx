@@ -113,7 +113,7 @@ export function ReferenceTextField({ value = '', onChange, placeholder, referenc
           {open && (
             <div className="mt-2 rounded-md border border-slate-200 bg-slate-50 p-3 text-xs leading-6 text-slate-600">
               <div className="mb-1.5 font-medium text-slate-500">
-                참고만 하세요. 위 입력칸에 자유롭게 적으시면 됩니다.
+                참고용:      위 입력칸에 자유롭게 적으시면 됩니다.
               </div>
               <ul className="space-y-1">
                 {references.map((line, i) => (
