@@ -142,7 +142,7 @@ export const SECTIONS = [
     title: '추가/기타 항목',
     required: false,
     type: 'reftext',
-    placeholder: '위에서 다 못 적은 추가 요청 사항을 자유롭게 적어주세요. 예) 우측 하단에 작은 "EcoGen" 워터마크 넣기 / 필름 그레인 효과 / 16:9 비율 고정 등',
+    placeholder: '위에서 다 못 적은 추가 요청 사항을 자유롭게 적어주세요. 예) 우측 하단에 작은 "PromptGen" 워터마크 넣기 / 필름 그레인 효과 / 16:9 비율 고정 등',
     references: [
       '비율/해상도 — 16:9, 1:1, 9:16, 4:5, 4K, 8K',
       '카메라 — Sony A7, Canon 5D, Fujifilm X-T4, 50mm 렌즈, 35mm 필름',

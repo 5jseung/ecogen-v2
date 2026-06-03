@@ -152,9 +152,6 @@ export default function Character({ filledCount, justCheered, isComplete = false
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      {/* Subtle pulse ring so people actually notice the seal */}
-      <div className="absolute inset-2 rounded-full bg-eco-500/10 animate-ping pointer-events-none" />
-
       {hover && (
         <div className="absolute top-full right-0 mt-2 w-72 bg-white border border-slate-200 rounded-xl shadow-xl p-3 text-xs text-slate-700 z-10">
           <div className="font-semibold text-slate-900 mb-1.5">{SPECIES.name}</div>

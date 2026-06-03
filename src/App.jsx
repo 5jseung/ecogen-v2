@@ -71,13 +71,13 @@ export default function App() {
           <div className="flex items-center gap-3">
             <img src="/seal/seal-3.png" alt="" className="w-8 h-8 object-contain" />
             <div>
-              <h1 className="text-base font-semibold text-slate-900">EcoGen — 이미지 프롬프트 빌더</h1>
+              <h1 className="text-base font-semibold text-slate-900">PromptGen — 이미지 프롬프트 빌더</h1>
               <p className="text-xs text-slate-500">v2 · 자유 입력 + 참고 단어 · 한국어 출력</p>
             </div>
           </div>
           <div className="flex items-center gap-2 text-xs text-eco-600 bg-eco-50 px-3 py-1.5 rounded-full">
             <span className="w-2 h-2 rounded-full bg-eco-500" />
-            Eco Mode ON
+            ON
           </div>
         </div>
         <div className="max-w-6xl mx-auto px-6 pb-3">
