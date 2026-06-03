@@ -40,6 +40,37 @@ export default function Character({ filledCount, justCheered, isComplete = false
   const [hover, setHover] = useState(false)
   const [animToken, setAnimToken] = useState(0)
 
+  // On first mount: play the current-stage animation TWICE so the user
+  // notices the seal exists. (Empty form = stage 1 = the "crying" pose.)
+  useEffect(() => {
+    let cancelled = false
+    let timer
+
+    const playOnce = () => {
+      setMode('stage-anim')
+      setAnimToken((n) => n + 1)
+    }
+    const goStatic = () => {
+      if (cancelled) return
+      setMode('static')
+    }
+
+    // First play
+    playOnce()
+    timer = setTimeout(() => {
+      if (cancelled) return
+      // Second play
+      playOnce()
+      timer = setTimeout(goStatic, STAGE_ANIM_MS)
+    }, STAGE_ANIM_MS)
+
+    return () => {
+      cancelled = true
+      clearTimeout(timer)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
   // --- floating scroll-lag --------------------------------------------------
   const wrapperRef = useRef(null)
   useEffect(() => {

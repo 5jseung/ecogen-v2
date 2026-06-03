@@ -108,7 +108,7 @@ export function ReferenceTextField({ value = '', onChange, placeholder, referenc
             onClick={() => setOpen((o) => !o)}
             className="text-xs text-eco-600 hover:text-eco-500 inline-flex items-center gap-1"
           >
-            {open ? '▾ 접기' : '▸ 더보기 — 참고할 만한 단어들'}
+            {open ? '▾ 접기' : '▸ 더보기 (예시, 참고 단어)'}
           </button>
           {open && (
             <div className="mt-2 rounded-md border border-slate-200 bg-slate-50 p-3 text-xs leading-6 text-slate-600">
